@@ -1,0 +1,15 @@
+**Objetivo**
+
+- Construir um site utilizando folha de estilos em cascata.
+
+**Descrição da Atividade**
+
+Nesta atividade você deverá construir um site para uma empresa da área de informática. O site deverá conter pelo menos cinco páginas. Os seguintes requisitos devem ser respeitados:
+
+1. Toda a formatação do site deve ser realizada por folha de estilos em cascata (CSS) em um arquivo externo (estilo.css).
+2. Na formatação do site você precisará explorar os recursos de:
+- Formatação de plano de fundo;
+- Tipos de letra e texto;
+- Margens;
+- Bordas;
+- Espaçamentos e dimensões.

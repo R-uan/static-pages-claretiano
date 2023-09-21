@@ -7,8 +7,8 @@ Os seguintes requisitos devem ser respeitados:
 
 - Toda a formatação do site deve ser realizada por folha de estilos em cascata (CSS) em um arquivo externo (estilo.css).
 - Na formatação do site você precisará explorar os recursos de:
-- Formatação de plano de fundo;
-- Tipos de letra e texto;
-- Margens;
-- Bordas;
-- Espaçamentos e dimensões.
+- Formatação de plano de fundo; X
+- Tipos de letra e texto; 
+- Margens; X
+- Bordas; X 
+- Espaçamentos e dimensões. X

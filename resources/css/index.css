@@ -7,14 +7,31 @@
 }
 
 body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    height: 100vh;
 }
+
+#background-image {
+    position: absolute;
+    background-image: url("/resources/images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header Segment */
 
 header {
     display: flex;
     position: absolute;
     align-items: center;
+    justify-items: center;
     margin-bottom: 10px;
     z-index: 7;
     top: 5vh;
@@ -22,23 +39,38 @@ header {
     height: 70px;
     width: 90vw;
 }
+
 header img {
     position: absolute;
     top: 0.1vh;
     height: 70px;
     left: 1px;
 }
-ul {
+
+#header-button {
+    border: 1px solid rgba(0, 0, 0, 0.588);
+    border-radius: 6px;
+    font-size: 15px;
+    width: 187px;
+    height: 37px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    margin: 0;
+}
+
+#header-menu {
     position: absolute;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     right: 1vw;
     margin: 0;
     padding: 0;
     width: 50vw;
     height: 50px;
 }
-li {
+
+#header-menu li {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -47,40 +79,103 @@ li {
     height: 50px;
     width: 10vw;
 }
+
 li:hover {
-    color: black;
+    color: rgb(0, 0, 0);
 }
+
+/*  Main Segment */
 
 main {
-    margin: 0;
-    height: 100vh;
-}
-
-#background-image {
-    background-image: url("/resources/images/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 98vw;
+    height: 70vh;
+    margin: 10px;
 }
 
 #main-title {
-    position: absolute;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     margin: 10px 0px 0px 10px;
-    outline: 2px solid blue;
-    left: 5vw;
-    top: 25vh;
+    height: 50vh;
 }
+
 #main-title img {
     max-height: 300px;
 }
 
-footer {
-    color: black;
-    display: flex;
+#main-button {
     position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.588);
+    border-radius: 6px;
+    font-size: 15px;
+    width: 187px;
+    height: 37px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    margin: 0px 0px 0px 0px;
+    bottom: 3vh;
+    right: 0.7vw;
+}
+
+#main-content {
+    height: 50vh;
+    width: 40vw;
+    margin: 10px 0px 0px 10px;
+    padding: 10px 0px 0px 40px;
+}
+
+#main-content h2 {
+    font-weight: 700;
+    color: rgb(200, 255, 0);
+}
+
+#main-content p {
+    font-weight: 300;
+    color: white;
+}
+
+/* Footer Segment */
+
+footer {
+    position: relative;
+    display: flex;
     align-items: center;
     height: 5vh;
-    width: 100%;
+    width: 98vw;
+    margin: 0px 10px 10px 10px;
+}
+
+#footer-menu {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    margin: 0;
+}
+
+#footer-menu li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 100;
+    font-size: large;
+    height: 50px;
+    width: 10vw;
+}
+#github-logo {
+    margin-left: 1vw;
+    height: 4vh;
+    width: 2vw;
+}
+
+/* Misc Segment */
+
+#main-button:hover,
+#header-button:hover {
+    color: black;
+    background-color: #ffffff;
 }

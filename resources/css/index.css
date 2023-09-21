@@ -1,49 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
 * {
-    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-family: "Roboto";
     color: white;
 }
 
 body {
     margin: 0;
-    display: flexbox;
     background-color: rgb(0, 0, 0);
-    outline: 2px solid red;
 }
 
 header {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    outline: 2px solid rgb(221, 0, 255);
-    height: 6vh;
+    position: absolute;
+    align-items: center;
+    margin-bottom: 10px;
+    z-index: 7;
+    top: 5vh;
+    left: 5vw;
+    height: 70px;
+    width: 90vw;
+}
+header img {
+    position: absolute;
+    top: 0.1vh;
+    height: 70px;
+    left: 1px;
+}
+ul {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right: 1vw;
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    height: 50px;
+}
+li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 100;
+    font-size: x-large;
+    height: 50px;
+    width: 10vw;
+}
+li:hover {
+    color: black;
 }
 
 main {
     margin: 0;
-    outline: 2px solid yellow;
     height: 100vh;
 }
 
+#background-image {
+    background-image: url("/resources/images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    height: 100%;
+}
+
+#main-title {
+    position: absolute;
+    width: fit-content;
+    margin: 10px 0px 0px 10px;
+    outline: 2px solid blue;
+    left: 5vw;
+    top: 25vh;
+}
+#main-title img {
+    max-height: 300px;
+}
+
 footer {
+    color: black;
     display: flex;
+    position: absolute;
     align-items: center;
-    justify-content: center;
-    outline: 2px solid white;
     height: 5vh;
-}
-
-ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    background-color: w;
-}
-
-li {
-    display: inline-block;
-    text-align: center;
-    margin: 0px 2.5vw 0px 2.5vw;
+    width: 100%;
 }

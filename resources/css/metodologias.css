@@ -3,48 +3,35 @@
 * {
     text-decoration: none;
     font-family: "Roboto";
-    color: white;
 }
 
 body {
-    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
     margin: 0;
-    height: 100vh;
-}
-
-#background-image {
-    position: absolute;
-    background-image: url("/resources/images/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.3;
-    height: 100vh;
-    width: 100vw;
+    background-color: rgb(15, 15, 15);
+    color: white;
 }
 
 /* Header Segment */
 
 header {
     display: flex;
-    position: absolute;
     align-items: center;
     justify-items: center;
-    margin-bottom: 10px;
-    z-index: 7;
+    background-color: rgb(15, 15, 15);
     top: 5vh;
     left: 5vw;
-    height: 70px;
-    width: 90vw;
+    height: 80px;
+    width: 99vw;
 }
 
 header img {
     position: absolute;
-    top: 0.1vh;
-    height: 70px;
-    left: 1px;
+    height: 10vh;
+    top: 1vh;
+    left: 2vw;
 }
 
 #header-button {
@@ -53,8 +40,8 @@ header img {
     font-size: 15px;
     width: 187px;
     height: 37px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     margin: 0;
 }
 
@@ -71,6 +58,7 @@ header img {
 }
 
 #header-menu li {
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -80,62 +68,54 @@ header img {
     width: 10vw;
 }
 
-li:hover {
+#header-menu li:hover {
     opacity: 0.5;
 }
+#header-button:hover {
+    color: black;
+    background-color: #ffffff;
+    cursor: pointer;
+}
 
-/*  Main Segment */
+/* Main Segment */
 
 main {
     display: flex;
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 98vw;
-    height: 70vh;
-    margin: 10px;
+    height: fit-content;
+    width: 99vw;
 }
 
-#main-title {
+#title {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 10px 0px 0px 10px;
-    height: 50vh;
-}
-
-#main-title img {
-    max-height: 300px;
-}
-
-#main-button {
-    position: absolute;
-    border: 1px solid rgba(0, 0, 0, 0.588);
-    border-radius: 6px;
-    font-size: 15px;
-    width: 187px;
-    height: 37px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    margin: 0px 0px 0px 0px;
-    bottom: 3vh;
-    right: 0.7vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/resources/images/background-metodologies.jpg");
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 10vh;
 }
 
 #main-content {
-    height: 50vh;
-    width: 40vw;
-    margin: 10px 0px 0px 10px;
-    padding: 10px 0px 0px 40px;
-}
-
-#main-content h2 {
-    font-weight: 700;
-    color: rgb(200, 255, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
 #main-content p {
-    font-weight: 300;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 120%;
+}
+
+#title h1,
+h3 {
+    margin: 0;
     color: white;
 }
 
@@ -147,7 +127,7 @@ footer {
     align-items: center;
     height: 5vh;
     width: 98vw;
-    margin: 0px 10px 10px 10px;
+    margin: 10vh 10px 10px 10px;
 }
 
 #footer-menu {
@@ -158,6 +138,7 @@ footer {
 }
 
 #footer-menu li {
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -170,13 +151,4 @@ footer {
     margin-left: 1vw;
     height: 4vh;
     width: 2vw;
-}
-
-/* Misc Segment */
-
-#main-button:hover,
-#header-button:hover {
-    color: black;
-    background-color: #ffffff;
-    cursor: pointer;
 }

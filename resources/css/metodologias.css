@@ -75,11 +75,10 @@ header img {
     opacity: 0.5;
 }
 #header-button:hover {
-    color: black;
-    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     cursor: pointer;
 }
-
 /* Main Segment */
 
 main {

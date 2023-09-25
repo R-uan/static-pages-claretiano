@@ -72,8 +72,8 @@ header img {
     opacity: 0.5;
 }
 #header-button:hover {
-    color: black;
-    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ main {
     outline: 2px solid rgb(88, 0, 31);
     border-radius: 10px;
     height: 60vh;
-    width: 15vw;
+    width: 16vw;
     margin: 10px;
 }
 
@@ -146,6 +146,7 @@ main {
     color: rgb(255, 255, 255);
     background-color: rgb(15, 15, 15);
     margin-top: 1vh;
+
     padding-top: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -159,10 +160,12 @@ h2 {
 }
 
 .inner-service-div li {
-    list-style: none;
+    list-style: "- ";
+    margin-bottom: 5px;
 }
 
 .inner-service-div ul {
     padding-left: 0;
     margin-left: 1vw;
+    margin-right: 1vw;
 }

@@ -79,8 +79,8 @@ header img {
 /* Footer Segment */
 
 footer {
-    align-self: flex-end;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: center;
     height: 5vh;
@@ -117,7 +117,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 60vw;
-    height: 98vh;
+    height: fit-content;
     margin-top: 5vh;
 }
 
